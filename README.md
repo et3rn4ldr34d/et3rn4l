@@ -16,21 +16,38 @@ Most likely features will be added in an incremental basis.
 
 *IkFueXRoaW5nIG91dCB0aGVyZSBpcyB2dWxuZXJhYmxlIHRvIGF0dGFjayBnaXZlbiBlbm91Z2ggdGltZSBhbmQgcmVzb3VyY2VzLiIgLSBLZXZpbiBNaXRuaWNr*
 
-## Instructions
+## To Do:
 
-To start your Phoenix server:
+- Add VPN Container Service
+- NAS (To Locally Mount Scan Results for access without having to SCP)
+- Private Email Server
+- Push Alerts (Email, SNS)
+- SSH Tunneling into LiveDashboard/LiveView
+- Add LiveView Admin Panel for GUI Hacking
+- Customizable Methodology Checklist
+- Responsive Design
+- Mobile Architecture
+- Connect to dr34d for easy command chaining
+- Pub/Sub Persistence Scanning w/SA-X for Subdomain Takeover
+- DigitalOcean Scaling
+- Logger
+- Hive AI Automated Hacking (Advanced, similar to pwnagotchi reinforcement learning)
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Installation
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+1. SSH into your VPS.
+2. Ensure Git/Curl is installed if it doesn't come with your distro:
+  > 
+3. Clone GitHub Repo using the following command (you can copy and paste into SSH terminal):
+  > 
+4. Run install.sh
+  > 
+5. Visit localhost:1337
+6. Enjoy your new VPS.
+*Note: If you do not need scaling capabilities, VPN Setup, or a GUI, it may be more efficient to simply run the base CLI tool: [dr34d](github.com/et3rn4ldr34d/dr34d)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+**There is an included "wipe.sh" script that you can run that will both uninstall as well as fully purge all application data from the VPS.  Please use this if necessary, but be VERY careful.  You will not be able to recover this data, so be absolutely certain you want to wipe.**
+<br></br>
 
-## Learn more
+**In most cases, wiping will not be necessary.  It is included for best practices, as there may be sensitive data that may linger as a result of application use, and it is an extra safeguard to use, especially if you need to destroy the VPS for any reason.  Simply run "wipe.sh" with this command:**
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
